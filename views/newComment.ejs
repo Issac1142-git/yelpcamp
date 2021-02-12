@@ -1,0 +1,22 @@
+<%- include('header') %>
+
+<div class="container">
+    <h1 class="text-center">Add a Comment to <%= campground.name %></h1>
+    <div style="margin: 25px auto; width: 30%;">
+    
+        <form action="/campgrounds/<%= campground._id %>/comments" method="POST">
+        
+            <div class="form-group">
+                <input type="text" placeholder="Comment Here" name="comment[text]" class="form-control">
+            </div>
+            
+            <div class="form-group">
+                <button class="btn btn-primary btn-block">Add Now!</button>
+            </div>
+        </form>
+    <a href="/campgrounds/<%= campground._id %>/comments/edit">Go Back</a>
+</div>
+</div>
+
+
+<%- include('footer') %>
