@@ -17,7 +17,7 @@ const Comment = require("./models/comment");
 const indexRouter = require("./routes/index");
 const campgroundRouter = require("./routes/campground");
 const commentRouter = require("./routes/comment");
-mongoose.connect("mongodb+srv://admin-issac:issac@cluster0.rkrfx.mongodb.net/yelpcamp", {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect("/*** add your url ***/", {useNewUrlParser: true, useUnifiedTopology: true});
 
 
 app.use(bodyParser.urlencoded({extended: true}));
